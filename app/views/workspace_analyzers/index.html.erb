@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Workspace Analyzer</h1>
+
+<%= form_tag("/workspace_analyzers/search", method: "get") do %>
+
+    <div class="field">
+      <%= label_tag(:workspace_id, 'Workspace ID:') %><br>
+      <%= text_field_tag(:workspace_id) %>
+    </div>
+    <div class="field">
+      <%= label_tag(:environment, 'Environment:') %><br>
+      <%= select_tag(:environment, options_for_select([['Staging', 'staging'], ['Acceptance', 'acceptance'],['Production', 'production']], 'staging')) %>
+    </div>
+    <div class="field">
+      <%= label_tag(:summaryonly, 'Summary Only?: (use for very large workspaces)') %><br>
+      <%= check_box_tag(:summaryonly, 'summaryonly', false ) %>
+    </div>
+
+    <div class="actions">
+      <%= submit_tag('Run Analyzer') %>
+    </div>
+<% end %>

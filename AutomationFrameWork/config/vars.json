@@ -1,0 +1,9 @@
+{ "title" :   "Ruby In Rails",
+  "url"   :   "http://rubyinrails.com",
+
+
+  "portal_url"      : "https://staging.portal.bluescape.com",
+  "owner_email"     : "automation.org.owner@bluescape.com",
+  "owner_password"  : "20sTagi15",
+  "org_name"        : "Enterprise Test"
+}

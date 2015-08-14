@@ -1,0 +1,42 @@
+<%= form_for(@automated_test) do |f| %>
+  <% if @automated_test.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@automated_test.errors.count, "error") %> prohibited this automated_test from being saved:</h2>
+
+      <ul>
+      <% @automated_test.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+    <!--
+  <div class="field">
+    <%= f.label :lastrundate %><br>
+    <%= f.text_field :lastrundate %>
+  </div>
+  <div class="field">
+    <%= f.label :pass %><br>
+    <%= f.check_box :pass %>
+  </div> -->
+  <div class="field">
+    <%= f.label :lastruntext %><br>
+    <%= f.text_field :lastruntext %>
+  </div>
+    <div class="field">
+      <%= f.label :filename %><br>
+      <%= f.text_field :filename %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+<%= form_for(@workspace_analyzer) do |f| %>
+  <% if @workspace_analyzer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workspace_analyzer.errors.count, "error") %> prohibited this workspace_analyzer from being saved:</h2>
+
+      <ul>
+      <% @workspace_analyzer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :workspace_id %><br>
+    <%= f.text_field :workspace_id %>
+  </div>
+  <div class="field">
+    <%= f.label :environment %><br>
+    <%= f.text_field :environment %>
+  </div>
+  <div class="field">
+    <%= f.label :results %><br>
+    <%= f.text_area :results %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

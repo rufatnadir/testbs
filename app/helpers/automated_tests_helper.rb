@@ -1,0 +1,2 @@
+module AutomatedTestsHelper
+end

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Automated Tests</h1>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Test ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Last Run Date</th>
+      <th>Pass?</th>
+      <th>Results</th>
+      <th>Filename</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @automated_tests.each do |automated_test| %>
+      <tr>
+        <td><%= automated_test.id%></td>
+        <td><%= automated_test.name %></td>
+        <td><%= automated_test.description %></td>
+        <td><%= automated_test.lastrundate %></td>
+        <td><%= automated_test.pass%></td>
+        <td><%= automated_test.lastruntext[0, 50] + '...' %></td>
+        <td><%= automated_test.filename %></td>
+        <td><%= link_to 'Run', run_automated_test_path(automated_test) %></td>
+        <td><%= link_to 'Show', automated_test %></td>
+        <td><%= link_to 'Edit', edit_automated_test_path(automated_test) %></td>
+        <td><%= link_to 'Destroy', automated_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Automated Test', new_automated_test_path %>

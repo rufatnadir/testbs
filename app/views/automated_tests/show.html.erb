@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @automated_test.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @automated_test.description %>
+</p>
+
+<p>
+  <strong>Lastrundate:</strong>
+  <%= @automated_test.lastrundate %>
+</p>
+
+<p>
+  <strong>Pass:</strong>
+  <%= @automated_test.pass %>
+</p>
+
+<p>
+  <strong>Lastruntext:</strong>
+  <%= @automated_test.lastruntext %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @automated_test.filename %>
+</p>
+
+<%= link_to 'Edit', edit_automated_test_path(@automated_test) %> |
+<%= link_to 'Back', automated_tests_path %>

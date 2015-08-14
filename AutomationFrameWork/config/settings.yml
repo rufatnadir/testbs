@@ -1,0 +1,21 @@
+wall_uid: "7Zyi7kWhyfxi9tHXxpsj"
+#wall_uid: "hngdhAJVDPQvw7AL7rHs"
+private_key_path: '../../test_automation/AutomationFrameWork/config/wall_rsa'
+#configuration_service_url: 'https://acceptance.configuration.bluescape.com/'
+configuration_service_url: 'https://staging.configuration.bluescape.com/'
+
+allow_invalid_cert: true
+log_level: 'DEBUG'
+#user_email: 'saleh.motan@protiviti.com'
+#user_pass: 'SalehProtiviti'
+
+user_email: 'rufat1@mailinator.com'
+user_pass: 'Nr_3181299'
+
+
+portal_url: 'https://staging.portal.bluescape.com'
+#portal_url: 'https://acceptance.portal.bluescape.com'
+
+owner_email: automation.org.owner@bluescape.com
+owner_password: 20sTagi15
+org_name: Enterprise Test

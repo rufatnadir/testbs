@@ -1,0 +1,7 @@
+# Logfile created on 2015-02-18 15:37:57 -0600 by logger.rb/44203
+I, [2015-02-18T15:37:57.681162 #13764]  INFO -- : Executing @scenario: Getting to users list page:18/02/2015 at 15:37:57
+I, [2015-02-18T15:38:18.130159 #13764]  INFO -- : Executing @scenario: Inviting user by email:18/02/2015 at 15:38:18
+E, [2015-02-18T15:38:19.160795 #13764] ERROR -- : The test @scenario has failed. Inviting user by email
+E, [2015-02-18T15:38:19.160795 #13764] ERROR -- : No connection could be made because the target machine actively refused it. - connect(2) for "127.0.0.1" port 9515
+I, [2015-02-18T15:38:19.161793 #13764]  INFO -- : If enabled, screenshot info at: failedScenarioInvitinguserbyemail_18_02_2015_15_38.png
+I, [2015-02-18T15:38:22.175119 #13764]  INFO -- : Executing @scenario: Open invitation link:18/02/2015 at 15:38:22
